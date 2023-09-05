@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins&display=swap');
 
 :root{
-  --primary_theme : #272822;
+  --primary_theme : #1d1e19;
   --secondary_theme : #161613;
   --secondary_font_color : #9b9dad;
   --primary_font_color : #e7e7e9;
   --fira : 'Fira Code', monospace;
+  --title_bg : #2e3028; 
+  --editor-bg : #272822;
   --poppins : 'Poppins', sans-serif;
 }
 
 body{
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   box-sizing: border-box;
   background-color: #1d1e19;
 }
+
