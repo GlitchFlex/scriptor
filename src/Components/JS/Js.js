@@ -22,7 +22,7 @@ function Js({ setJs, JS }) {
     return (
         <>
             <div className="editor">
-                <div className="title">.css</div>
+                <div className="title">.js</div>
                 {/* <div style={{background : "red", width : "100%", height : "60px"}}></div> */}
                 <CodeMirror
                     value={JS}
