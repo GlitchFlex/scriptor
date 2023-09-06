@@ -4,10 +4,11 @@ import SplitPane from 'react-split-pane';
 import Html from '../../Components/HTML/Html';
 import Css from '../../Components/CSS/Css';
 import Js from '../../Components/JS/Js';
+import Output from '../../Components/Output/Output';
 
 function CreateNew() {
 
-    const [html, setHtml] = useState("<p>Hello</p>");
+    const [html, setHtml] = useState();
     const [css, setCss] = useState();
     const [js, setJs] = useState();
 
@@ -35,10 +36,9 @@ function CreateNew() {
                             <Css css = {css} setCss={setCss}/>
                             <Js js = {js} setJs={setJs}/>
                         </SplitPane>
-
-                        {/* <p>fuck off</p> */}
                     </SplitPane>
-                    <p>OUTPUT</p>
+                    {/* idhar dyan de */}
+                    <Output css = {css} html = {html} js = {js}/>
                 </SplitPane>
             </div>
         </div>
