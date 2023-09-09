@@ -1,0 +1,85 @@
+
+
+  .main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: var(--primary_theme);
+  }
+  .left-box{
+    width: 50%;
+    padding-left: 18px;
+    height: 100%;
+    background-color: rgb(12 8 23);
+  }
+  
+  .logo-title{
+    font-family: var(--fira);
+    color : var(--primary_font_color);
+    /* margin-bottom: 30px; */
+  }
+
+  .signtext{
+    font-family: var(--poppins);
+    color : var(--primary_font_color);
+    display: block !important;
+    font-size: 28px;
+  }
+
+
+  .right-box {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left:  18px;
+    display: flex;
+    align-items: center;
+
+    background-color: var(--primary_theme);
+    width: 50%;
+
+    /* background-color: aqua; */
+  }
+
+  .log-btn{
+
+    font-family: var(--poppins);
+    margin-right: 10px;
+    /* padding: 4px 7px; */
+  }
+
+  .google_btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(65, 55, 255);
+    /* box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px; */
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    color: #f0f0f0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.google_btn:hover{
+  background-color: rgb(85, 76, 255);
+}
+
+  .btn-icon{
+    font-size: 20px;
+    margin-right: 10px;
+    
+  }
+
+  .image{
+    width: 100%;
+    object-position: center ;
+    
+  }

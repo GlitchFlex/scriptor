@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Sidebar.css';
-import {  VscAdd, VscRocket, VscJson, VscExport, VscChromeClose } from "react-icons/vsc";
+import {  VscAdd, VscRocket, VscJson, VscExport, VscChromeClose, VscPackage } from "react-icons/vsc";
 // import { MdMessage } from "react-icons/md";
 // import { BiSearch } from "react-icons/bi";
 import {NavLink} from 'react-router-dom';
@@ -9,9 +9,9 @@ import SidebarMenu from './SidebarMenu';
 
 const routes = [
     {
-      path: "/",
+      path: "/home",
       name: "Home",
-      icon: <VscRocket />,
+      icon: <VscPackage/>,
     },
     {
       path: "/create",
@@ -19,9 +19,9 @@ const routes = [
       icon: <VscAdd />,
     },
     {
-      path: "/help",
-      name: "Messages",
-      icon: <VscJson />,
+      path: "/explore",
+      name: "Explore",
+      icon: <VscRocket />,
     },
     
   ];

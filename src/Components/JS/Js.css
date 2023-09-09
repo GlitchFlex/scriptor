@@ -9,7 +9,30 @@
     justify-content: flex-start;
     
 }
- 
+
+.icon-coverss{
+  background-color: transparent;
+  width : 35px;
+  height : 40px;
+  position: absolute;
+  /* border : 1px solid yellow; */
+  left:  100px;
+  top: 0px;
+  cursor: pointer;
+  color : var(--primary_font_color);
+  /* border-radius: 50%; */
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-coverss:hover{
+  background-color: var(--title_bg);
+
+  /* border-bottom: 2px solid yellow!important; */
+  /* border */
+}
+
 
 
 .title{

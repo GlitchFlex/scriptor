@@ -1,0 +1,14 @@
+.wrapper{
+    /* background-color: blue; */
+    border-radius: none;
+}
+
+.ant-modal-content{
+    /* background-color: blue!important; */
+    border-radius: 0!important;
+    padding: 0 !important;
+    box-shadow:  none!important;
+    
+
+
+}

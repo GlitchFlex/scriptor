@@ -1,33 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Js.css';
-import { VscCode } from 'react-icons/vsc';
+import { VscCode, VscCopy } from 'react-icons/vsc';
 import CodeMirror from '@uiw/react-codemirror';
-// import { html } from '@codemirror/lang-html';
+import copy from 'copy-to-clipboard';
 import { javascript } from '@codemirror/lang-javascript';
 import { monokai } from '@uiw/codemirror-theme-monokai';
+import { Tooltip, message } from 'antd';
 
 function Js({ setJs, JS }) {
+    const [localState, setLocalState] = useState(JS);
+
     const onChange = React.useCallback((value, viewUpdate) => {
         setJs(value);
+        setLocalState(value);
     }, []);
 
-
-    // extensions={html({ 
-    //     matchClosingTags: true,
-    //     autoClosetags : true
-    // })}
-
-    // extensions={[javascript({ jsx: true })]}
+    const copyHandler = () => {
+        copy(localState);
+        message.success("copied!")
+    };
 
     return (
         <>
             <div className="editor">
+                <Tooltip title="copy">
+                {/* <span>Tooltip will show on mouse enter.</span> */}
+                    <div className='icon-coverss' onClick={copyHandler}>
+                        <VscCopy style = {{fontSize : "19", }}/>
+                    </div>
+                </Tooltip>
                 <div className="title">.js</div>
                 {/* <div style={{background : "red", width : "100%", height : "60px"}}></div> */}
                 <CodeMirror
                     value={JS}
                     height="320px"
-                    className='code-mirror'
+                    className="code-mirror"
                     theme={monokai}
                     extensions={[javascript({ jsx: true })]}
                     onChange={onChange}
