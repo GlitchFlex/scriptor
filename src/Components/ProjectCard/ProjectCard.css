@@ -1,0 +1,53 @@
+.projectCard{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #2e3028;
+}
+
+.frame-box{
+    /* background-color: var(--editor-bg); */
+    background-color: var(--primary_font_color);
+    height: 70%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+}
+
+.icons{
+    display: flex;
+    width: 60px;
+    justify-content: space-around;
+}
+
+.info{
+
+    width: 98%;
+    height : 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 7px; */
+    /* background-color: aqua; */
+}
+
+.delIcon{
+    font-size: 20px;
+    color: rgb(132, 132, 132);
+    cursor: pointer;
+    
+}
+
+.delIcon:hover{
+    color: var(--primary_font_color)
+}
+
+
+.project-card-title{
+    font-family: var(--fira);
+    color : var(--primary_font_color);
+}

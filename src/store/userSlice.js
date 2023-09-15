@@ -7,7 +7,8 @@ const initialState = {
     "picture"  : "",
     "email"  :"",
     "provider" : "",
-    "googleId" : ""
+    "googleId" : "",
+    "isLoaded" : null
 };
 
 
@@ -27,6 +28,8 @@ export const userSlice = createSlice({
         state.provider = payload.payload.provider;
         state.picture = payload.payload.picture;
         state.googleId = payload.payload.googleId;
+        state.isLoaded = payload.payload.isLoaded;
+
        
       },
       resetUser: (state) => Object.assign(state, initialState),

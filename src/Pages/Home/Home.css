@@ -1,0 +1,61 @@
+.home-box{
+    width: 100vw;
+    padding: 20px;
+}
+
+
+
+/* ADSDADASDASD */
+
+.searchBox{
+    width: 98%;
+    height : 30px;
+    padding: 8px 17px;
+    border-radius: 25px;
+    font-size: 17px;
+    font-family: var(--fira);
+    color : var(--primary_font_color);
+    background-color: var(--editor-bg);
+    /* background-color: blue; */
+    /* color : red; */
+    outline: none;
+    border: none;
+}
+
+
+.inputBox{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.searchIcon{
+    color : var(--editor-bg);
+    font-size: 25px;
+}
+
+.iconBox{
+    background-color: rgb(172, 172, 172);
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top : 20px;
+    right : 15px;
+    
+}
+
+.projectBox{
+    width: 99%;
+    /* background-color: aqua; */
+    padding: 10px;
+    height : 100%;
+    overflow-y: scroll;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}

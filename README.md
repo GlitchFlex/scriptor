@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Scriptor- Get Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -39,32 +39,29 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Scriptor - About
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Description
 
-### Code Splitting
+Scriptor offers a platform to all the users who have a knack with frontend development. Users can easily login with either google or github. One can create their own drafts.. play around with the well configured editors which are resizable too. They can even explore the other drafts created by other users.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Screenshots
 
-### Analyzing the Bundle Size
+#### Login
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Alt text](https://i.imgur.com/4bSqWcL_d.jpg?maxwidth=520&shape=thumb&fidelity=high "This is some image...")
 
-### Making a Progressive Web App
+#### Projects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![Alt text](https://i.imgur.com/DWMRw9V_d.jpg?maxwidth=520&shape=thumb&fidelity=high "This is some image...")
 
-### Advanced Configuration
+#### Editor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Alt text](https://i.imgur.com/5b07XoC_d.jpg?maxwidth=520&shape=thumb&fidelity=high "This is some image...")
 
-### Deployment
+![Alt text](https://i.imgur.com/gW5SUpm_d.jpg?maxwidth=520&shape=thumb&fidelity=high "This is some image...")
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+

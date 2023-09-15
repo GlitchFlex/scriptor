@@ -34,7 +34,7 @@ function OutputModal({ css, js, html, isModalOpen, setIsModalOpen }) {
         <Modal
             open={isModalOpen}
             width={1000}
-            // height = {800}
+            height = {800}
             onCancel={handleCancel}
             closeIcon={null}
             maskStyle={{backdropFilter : "blur(10px)"}}
@@ -42,7 +42,7 @@ function OutputModal({ css, js, html, isModalOpen, setIsModalOpen }) {
             bodyStyle={{
                 borderRadius: 'none',
                 padding: '0',
-                height : "800",
+                height : "500px",
                 margin: '0',
                 backgroundColor: '#1d1e19',
                 boxShadow : "none"
@@ -50,12 +50,12 @@ function OutputModal({ css, js, html, isModalOpen, setIsModalOpen }) {
             footer={null}
         >
             <iframe
-                className="output-frame"
+                // className="output-frame"
                 // ref={iframeRef}
-                id="i-frame"
+                // id="i-frame"
                 title="outputModal"
                 srcDoc={result}
-                style={{ border: 'none', height: '100%', width: '100%' }}
+                style={{ border: 'none', width: '100%', height : "100%" }}
             ></iframe>
         </Modal>
     );

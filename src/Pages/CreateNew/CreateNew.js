@@ -11,8 +11,9 @@ import Output from '../../Components/Output/Output';
 import Header from '../../Components/Header/Header';
 import OutputModal from '../../Components/OutputModal/OutputModal';
 import { userSelector } from "../../store/userSlice";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate , useParams} from 'react-router-dom';
 import { message } from 'antd';
+import { getProjectById, useGetProjectById } from '../../API/Project';
 
 
 function CreateNew() {
@@ -23,22 +24,30 @@ function CreateNew() {
     const [js, setJs] = useState();
     const [logs, setLogs] = useState(["hellow"]);
     const [isModalOpen, setIsModalOpen] = useState(false);
-
+    const [title, setTitle] = useState("Untitled")
+    const [isPublic, setIsPublic] = useState(false)
+    const [isLoggedIn, setIsLoggedIn] = useState();
     const user = useSelector(userSelector);
-    // console.log(user,"logged in user");
-    useEffect(()=>{
-        if(user.googleId.length === 0){
-            // message.error("please login to access this route")
-            // console.log(user.googleId.length)
+    
+
+   useEffect(()=>{
+        // if(localStorage.getItem("user"))
+        const userObj = localStorage.getItem("user");
+        if(!userObj){
+           
             navigate('/');
         }
-    }, [])
+   })
 
-    // console.log(html)
+
+
+  
+
     return (
         <div className="box">
-            <Header setIsModalOpen = {setIsModalOpen} isModalOpen = {isModalOpen} setCss = {setCss} setJs = {setJs} setHtml = {setHtml}/>
-            <div>
+            <Header title = {title} setIsPublic = {setIsPublic} isPublic = {isPublic} setTitle={setTitle} setIsModalOpen = {setIsModalOpen} isModalOpen = {isModalOpen} setCss = {setCss} setJs = {setJs} setHtml = {setHtml} css = {css} js ={js} html  = {html}/>
+            
+                <div>
                 {/* horizontal split */}
                 <SplitPane
                     style={{ width: '100%' }}

@@ -24,6 +24,8 @@ function Html({ setHtml, HTML }) {
         message.success("copied!")   
     };
 
+    // console.log(HTML);
+
 
     
     return (

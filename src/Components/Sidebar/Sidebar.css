@@ -75,10 +75,24 @@
   
     color: white;
   }
+
+  .lolDewds{
+    border : none!important;
+  }
   
   .routes {
     margin-top: 15px;
     display: flex;
+    height: 87%;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .routes-root {
+    margin-top: 15px;
+    display: flex;
+    /* height: 87%; */
+    /* justify-content: space-between; */
     flex-direction: column;
     gap: 5px;
   }
@@ -100,6 +114,7 @@
     color : rgb(156, 156, 156);
     transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
   }
+  
   .active {
     border-right: 2px solid white;
     /* background: rgb(45, 51, 89); */
